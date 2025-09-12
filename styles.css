@@ -70,10 +70,14 @@
       justify-content: center;
       align-items: center;
       margin-left: 9%;
-      width:300px;
-      height:290px;
+      width:280px;
+      height:280px;
     }
 
+    .name {
+      margin-top: -1%;
+    }
+    
     .projects {
       grid-column: 3 / 4;
       grid-row: 1 / 3;

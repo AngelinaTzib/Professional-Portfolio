@@ -8,7 +8,6 @@
       height: 100vh;
     }
 
-
     .header {
       background-color: #AC9C8D;
       padding: 1rem 2rem;
@@ -19,15 +18,11 @@
       border-bottom-right-radius: 12px;
     }
 
-
-
-
     .header h1 {
       margin: 0;
       font-size: 1.5rem;
       font-weight: bold;
     }
-
 
     .nav-box a {
       margin-left: 1.5rem;
@@ -36,6 +31,12 @@
       font-weight: 500;
     }
 
+    .nav-box {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+    }
 
     .container {
       display: grid;
@@ -45,48 +46,50 @@
       height: 90vh;
     }
 
-
     .box {
       background-color: #e6e6dc;
       padding: 1rem;
       border-radius: 12px;
     }
 
-
-
-
     .flower {
       width:20%;
       float: right;
     }
+
     .about {
       grid-column: 1 / 2;
       grid-row: 1 / 2;
     }
 
-
     .title{
       margin: 0px;
     }
-
 
     .photo {
       grid-column: 2 / 3;
       grid-row: 1 / 2;
       background-color: #DDD9CE;
     }
-    .profile{
-      height:320px;
-      margin-top: 8%;
+
+    .welcome {
+      margin-top: 20vh;
+      font-size: xx-large;
+      font-weight: 600;
     }
 
+    @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
-    .name {
-      margin-top: -1%;
-      align-items: center;
-      display: flex;
-    }
-
+.welcome {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
 
     .projects {
       grid-column: 3 / 4;
@@ -94,29 +97,24 @@
       background-color: #F4D9C0;
     }
 
-
     .project1 {
       width:98%;
       margin-top: -4%;
     }
-
 
     .project2 {
       width:102%;
       margin-top: 0%;
     }
 
-
     .project3 {
       width:101%;
       margin-top: 0%;
     }
 
-
     .projects h2 {
       margin-top: 0;
     }
-
 
     .project-card {
       background: white;
@@ -129,48 +127,40 @@
       height: 27vh;
     }
 
-
     .linkedin {
       color: black;
       font-size: large;
     }
-
 
     .email {
       color:black;
       font-size: large;
     }
 
-
     .github {
       color:black;
       font-size: large;
     }
-
 
     .resume {
       color: black;
       font-size: large;
     }
 
-
     .project-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     }
-
 
     .project-card h3 {
       margin-top: 0;
       color: #333;
     }
 
-
     .project-card p {
       font-size: 0.9rem;
       color: #555;
     }
-
 
     .skills {
       grid-column: 1 / 2;
@@ -178,12 +168,10 @@
       background-color: #AC9C8D;
     }
 
-
     ul {
       column-count: 2;
       column-gap: 15px;
     }
-
 
     .contact {
       grid-column: 2 / 3;
@@ -191,13 +179,11 @@
       background-color: #F4D9C0;
     }
 
-
     .grid-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
     }
-
 
     .grid-item {
       background-color:  #F4D9C0;
@@ -205,7 +191,9 @@
       text-align: center;
     }
 
-
+    a {
+      font-size: larger;
+    }
 
 
     /* Responsive */
@@ -215,39 +203,31 @@
         flex-direction: column;
       }
 
-
-      .profile {
-        margin-bottom: -6%;
-        height: 102%;
-       
-      }
-
-
       .header {
         display:flex;
       }
-
 
       .box {
         grid-column: auto !important;
         grid-row: auto !important;
       }
+
       .about{
         order: 2;
       }
+
       .photo{
         order: 1;
       }
+      
       .projects{
         order: 4
       }
-
 
       .project1 {
         width:102%;
         margin-top: 0%;
       }
-
 
       .project2 {
         width:102%;
@@ -258,21 +238,19 @@
         width:102%;
         margin-top: 2%;
       }
+
       .contact{
         order:5;
       }
-
 
       .skills{
         order: 3;
       }
 
-
       .nav-box {
         width: 100%;
         text-align: center;
       }
-
 
       .nav-box a {
         margin: 0 0.75rem;

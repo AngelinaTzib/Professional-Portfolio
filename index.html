@@ -8,7 +8,8 @@
   <title>Angie's Portfolio</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-  <link rel="icon" href="/Images/Angie’s Portfolio logo (1).png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com">
+  <link rel="icon" href="/images/Angie’s Portfolio logo.png">
 </head>
 
 
@@ -16,48 +17,50 @@
 
 <body class = "body">
   <header class="header">
-    <h1>ANGIE TZIB</h1>
+    <h1 class="name-text">ANGELINA TZIB</h1>
+    <nav class="nav">
+      <p class="dev-text">Full-Stack Developer</p>
+    </nav>
+    <img src="/images/gloomy nav pic.png" class="gloomy">
+    <img src="/images/pompom transparent.png" class="pompompurin">
     <nav class ="nav-box">
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <a href="#skills">Tech Skills</a>
-      <a href="#projects">Projects</a>
+      <a href="#about" class="pink-text">About</a>
+      <a href="#contact" class="pink-text">Contact</a>
+      <a href="#skills" class="pink-text">Tech Skills</a>
+      <a href="#projects" class="pink-text">Projects</a>
     </nav>
   </header>
 
 
 
-
-  <main class="container">
-    <section class="box about" id="about">
-      <img src="/images/flower.png" class="flower">
-      <p id=#about>
-      <h2>About Me</h2>
-      <p>I'm from Pontotoc, Mississippi<br>
-      I graduated from Pontotoc High School <br>
-      My time at Base Camp is very stressful<br>
-      I am working to become full-stack developer<br>
-      What I wanna do next: bachelor’s<br>
-      I play Roblox and Fun Run 4 when I have free time <br>
-      I read my bible and pray everyday
-      </p>
-    </id>
-    </section>
-
-
-
-
-    <section class="box photo">
-      <div class="welcome">
-        Hi, My name is Angelina Tzib and this is my portfolio
+  <section class="about-wrapper">
+    <section class="photo-container">
+      <div class="photo-box">
+        <img src="images/professional-headshot.png" class="me">
       </div>
     </section>
 
+        <section class="about-box">
+      <h2 class="about-text">About Me</h2>
+      <p class="pink-text">
+        I'm from Pontotoc, Mississippi.
+        I am planning on getting my bachelor's for cybersecurity.
+        I am interested in Ux design and Web Development.
+        In my free time I like to watch Youtube,
+        play games,
+        listen to music,
+        and watch TikTok
+        I also pray everyday
+      </p>
+    </section>
+  </section>
 
 
-
+<!-- the class was box i think -->
+ <!-- and photo... -->
+<!-- box was the class -->
     <section class="box projects" id="projects">
-      <h2>Projects</h2>
+      <h2 class="brown-text">Projects</h2>
       <div class="project-card">
         <center><img src="/images/Screenshot 2025-09-12 112033.png" class="project1"></center>
       </div>
@@ -82,18 +85,18 @@
 
     <p id="#skills">
     <section class="box skills" id="skills">
-      <h2>Skills</h2>
+      <h2 class="brown-text">Skills</h2>
       <ul>
-        <li>Python</li>
-        <li>Parrot</li>
-        <li>SQL</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Django</li>
-        <li>Java</li>
-        <li>Spring</li>
+        <li class="pink-text">Python</li>
+        <li class="pink-text">Parrot</li>
+        <li class="pink-text">SQL</li>
+        <li class="pink-text">HTML</li>
+        <li class="pink-text">CSS</li>
+        <li class="pink-text">JavaScript</li>
+        <li class="pink-text">React</li>
+        <li class="pink-text">Django</li>
+        <li class="pink-text">Java</li>
+        <li class="pink-text">Spring</li>
       </ul>
     </section>
     </p>
@@ -103,7 +106,7 @@
 
     <p>
     <section class="box contact">
-       <h2 id=contact>Contact Me</h2>
+       <h2 id=contact class="brown-text">Contact Me</h2>
        <section class="grid-container">
         <div class="grid-item">
         <a target="_blank" href="https://www.linkedin.com/checkpoint/lg/login-challenge-submit?lastCv=AgGAmZOiIpg0DAAAAZk7POvCGDbcNOZQRyUHDkVtnxlMv3IkdrnWakYM0ng&_d=d&vcd=AgHEyQ9Ddvk84AAAAZk7PRqXZlVFqpmAeGjHqqRkAjUN-CuakC6MIMyM4zh6p1P0b--QlFwI2OMHH4CbrhKyl4P5pPM74w&pageInstance=urn%3Ali%3Apage%3Ad_checkpoint_ch_captchaV2Challenge%3Bp%2Fg8svGRRvK0xogKVoHnKw%3D%3D&controlId=d_checkpoint_ch_captchaV2Challenge-Submit&ut=3SzbGCqphA_rU1" class="linkedin">LinkedIn</a>
@@ -124,6 +127,5 @@
 
 
     </section>
-  </main>
 </body>
 </html>

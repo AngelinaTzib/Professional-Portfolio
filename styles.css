@@ -136,6 +136,7 @@ background: linear-gradient(90deg, rgba(253, 174, 174, 1) 0%, rgba(255, 237, 195
   border-color: #7f7b76;
   width: 30rem;
   height: 35rem;
+  margin-left: 2rem;
 }
 
 .skill-text {
@@ -283,6 +284,11 @@ transition: background 0s;
     display:flex;
   }
 
+  .box {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+
   .nav-box {
     display: flex;
     flex-wrap: wrap;
@@ -340,6 +346,5 @@ transition: background 0s;
   }
 
 }
-
 
 }

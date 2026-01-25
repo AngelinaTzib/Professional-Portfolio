@@ -173,6 +173,29 @@ ul {
   margin-bottom: 2rem;
 }
 
+button {
+color: #fdaeae;
+background-color: #fdaeae;
+border: 1px solid #7f7b76;
+border-radius: 4px;
+padding: 15px 18px 30px 15px;
+cursor: pointer;
+height:32px;
+font-size:14px;
+background-position: center;
+transition: background 0.8s;
+}
+
+button:hover {
+background:	#ff8daa radial-gradient(circle, transparent 1%, #fdaeae 1%) center/15000%;
+}
+
+button:active{
+background-color:#7f7b76;
+background-size: 100%;
+transition: background 0s;
+}
+
 .beige-text {
   color: #ffedc3;
   font-family: "Alice", serif;
@@ -220,6 +243,15 @@ ul {
   margin-top: 1rem;
 }
 
+.contact-link {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contact-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px #fdaeae;
+}
+
 .grid-container {
   display: flex;
   align-items: center;
@@ -234,25 +266,6 @@ ul {
   margin-top: -5rem;
 }
 
-/* .project1 {
-  width:98%;
-  margin-top: -4%;
-} */
-
-/* .project2 {
-  width:102%;
-  margin-top: 0%;
-} */
-
-/* .project3 {
-  width:101%;
-  margin-top: 0%;
-} */
-
-/* .projects h2 {
-  margin-top: 0;
-} */
-
 .project-card {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
@@ -264,26 +277,10 @@ ul {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* .project-card h3 {
-  margin-top: 0;
-  color: #333;
-} */
-
-/* .project-card p {
-  font-size: 0.9rem;
-  color: #555;
-} */
-
-
 /* Responsive */
 @media (max-width: 900px) {
   .header {
     display:flex;
-  }
-
-  .box {
-    grid-column: auto !important;
-    grid-row: auto !important;
   }
 
   .nav-box {
@@ -343,5 +340,6 @@ ul {
   }
 
 }
+
 
 }

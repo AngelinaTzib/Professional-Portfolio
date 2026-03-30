@@ -309,6 +309,10 @@ transition: background 0s;
   .about-photo-wrapper {
     flex-direction: column;
   }
+  .photo-container{
+    justify-content: center;
+    align-self: center;
+  }
   .about-wrapper {
     flex-direction: column;
     gap: 2rem;
@@ -318,6 +322,7 @@ transition: background 0s;
     flex-direction: row;
     gap: 1rem;
     width: 100%;
+    justify-content: center;
     align-items: center;
   }
   .grid-container {
